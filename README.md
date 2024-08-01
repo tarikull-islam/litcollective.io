@@ -1,2 +1,0 @@
-# litcollective.io
-LitCollective 
