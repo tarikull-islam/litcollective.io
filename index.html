@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>litcollective.io</title>
+    <!-- ! css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ! JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+      integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/scrollreveal.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body class="">
+    <!-- ! HEADER & NAV SECTION -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav-brand"
+          ><img src="./assets/logo.png" alt="logo"
+        /></a>
+        <div class="nav-menu">
+          <div class="nav-list">
+            <div class="nav-item">
+              <i class="fa-solid fa-bolt"></i>
+              <a href="#home" class="nav-link">home</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link">cases studies</a>
+            </div>
+            <div class="nav-item">
+              <a href="#about-us" class="nav-link">about us</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link">careers</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link">what we do</a>
+            </div>
+            <div class="nav-item">
+              <a href="#" class="nav-link">careers</a>
+            </div>
+            <div onclick="flyMenuToggle()" class="close-fly-menu">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+          </div>
+          <div class="select-menu">
+            <div class="select-btn">
+              <div class="selected">
+                <img src="./assets/american-flag.png" alt="american-flag" />
+                <span class="option-text">EN-US</span>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="options">
+              <li class="option">
+                <img src="./assets/american-flag.png" alt="american-flag" />
+                <span class="option-text">BANGLA</span>
+              </li>
+              <li class="option">
+                <img src="./assets/american-flag.png" alt="american-flag" />
+                <span class="option-text">HINDI</span>
+              </li>
+              <li class="option">
+                <img src="./assets/american-flag.png" alt="american-flag" />
+                <span class="option-text">Spanish</span>
+              </li>
+              <li class="option">
+                <img src="./assets/american-flag.png" alt="american-flag" />
+                <span class="option-text">RUSSIAN</span>
+              </li>
+            </ul>
+          </div>
+          <div onclick="flyMenuToggle()" class="open-fly-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ! HOME SECTION -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="wrapper">
+            <div class="text-container">
+              <h2 class="title">
+                We design experiences that move businesses to the future.
+              </h2>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn">
+                <span>Play showreel</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#" class="btn">
+                <span>About us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <aside class="side-sticky">
+          <img src="./assets/nominee.png" alt="nominee" />
+        </aside>
+      </section>
+      <!-- ! VIDEO SECTION -->
+      <section class="video-intro" id="video-intro">
+        <div class="hand-left">
+          <img src="./assets/hand-left.png" alt="hand images" />
+        </div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="player-container">
+              <img src="./assets/cuple.png" alt="cupule img" />
+            </div>
+          </div>
+        </div>
+        <div class="hand-right">
+          <img src="./assets/hand-right.png" alt="hand images" />
+        </div>
+      </section>
+      <!-- ! BRAND PARTNER SECTION -->
+      <section class="brand-partner">
+        <div class="container">
+          <div class="wrapper">
+            <div class="images-container">
+              <div class="image">
+                <img src="./assets/triple-whale.png" alt="triple whale" />
+              </div>
+              <div class="image">
+                <img src="./assets/handcash.png" alt="handcash" />
+              </div>
+              <div class="image">
+                <img src="./assets/ascendEX.png" alt="ascendEX" />
+              </div>
+              <div class="image">
+                <img src="./assets/mojoheads.png" alt="mojoheads" />
+              </div>
+              <div class="image">
+                <img src="./assets/vera.png" alt="vera" />
+              </div>
+              <div class="image">
+                <img src="./assets/finnet.png" alt="finnet" />
+              </div>
+              <div class="image">
+                <img src="./assets/trove mate.png" alt="trove mate" />
+              </div>
+              <div class="image">
+                <img src="./assets/foundry-DAO.png" alt="foundry" />
+              </div>
+              <div class="image">
+                <img src="./assets/nycrypto.png" alt="nycrypto" />
+              </div>
+              <div class="image">
+                <img src="./assets/soclly.png" alt="soclly" />
+              </div>
+              <div class="image">
+                <img src="./assets/flywallet.png" alt="flywallet" />
+              </div>
+              <div class="image">
+                <img src="./assets/dolphin.png" alt="dolphin" />
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn">
+              <span>What we do</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#" class="btn">
+              <span>Testmonials</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ! ABOUT US SECTION -->
+      <section class="about-us" id="about-us">
+        <div class="wrapper">
+          <div class="content-container">
+            <img src="./assets/single-female.png" alt="" />
+            <div class="text-content">
+              <h4 class="title">
+                It's also about creating the best work environment.
+              </h4>
+              <a href="#" class="btn">About us</a>
+            </div>
+          </div>
+          <div class="content-container">
+            <img src="./assets/laptop.jpg" alt="" />
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="brand-box">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>/academy</span>
+                </div>
+                <h4 class="title">
+                  Sharing knowledge and growing as a community.
+                </h4>
+              </div>
+              <div class="btn-container">
+                <a href="#" class="btn">
+                  <span>Careers</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ! CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="hand-top">
+        <img src="./assets/hand-top.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="text-container">
+            <h3 class="title">Your business will never be the same</h3>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn">
+              <span>Talk to a specialist</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#" class="btn">Get in touch</a>
+          </div>
+        </div>
+        <footer>
+          <p class="copy-right">LitCollective © 2022</p>
+          <ul class="contact-media">
+            <li class="media">
+              <a href="#" class="media-link">
+                <i class="fa-brands fa-behance"></i>
+                <span>Behance</span>
+              </a>
+            </li>
+            <li class="media">
+              <a href="#" class="media-link">
+                <i class="fa-solid fa-basketball"></i>
+                <span>Dribbble</span>
+              </a>
+            </li>
+            <li class="media">
+              <a href="#" class="media-link">
+                <i class="fa-brands fa-twitter"></i>
+                <span>twitter</span>
+              </a>
+            </li>
+            <li class="media">
+              <a href="#" class="media-link">
+                <i class="fa-brands fa-instagram"></i>
+                <span>instagram</span>
+              </a>
+            </li>
+            <li class="media">
+              <a href="#" class="media-link">
+                <i class="fa-solid fa-m"></i>
+                <span>Medium</span>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+      <div class="hand-bottom">
+        <img src="./assets/hand-bottom.png" alt="" />
+      </div>
+    </section>
+    <!-- ! FOOTER SECTION -->
+  </body>
+</html>
