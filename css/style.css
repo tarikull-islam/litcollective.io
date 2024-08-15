@@ -98,9 +98,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-section,
-header,
-footer {
+section {
   padding: 0 1rem;
 }
 /* ! =====================COMMON CSS=========================== */
@@ -360,10 +358,6 @@ footer {
     .nav .nav-menu .nav-list {
       gap: 2rem;
     }
-    @media screen and (min-width: 1200px) {
-      @media screen and (min-width: 1400px) {
-      }
-    }
   }
 }
 /* ! HOME SECTION CSS */
@@ -398,49 +392,47 @@ footer {
   z-index: var(--z-fixed);
 }
 /* ! HOME SECTION RESPONSIVE CSS */
-@media screen and (min-width: 450px) {
-  @media screen and (min-width: 576px) {
-    .home .side-sticky {
-      max-width: 2.5rem;
+@media screen and (min-width: 576px) {
+  .home .side-sticky {
+    max-width: 2.5rem;
+  }
+  @media screen and (min-width: 768px) {
+    .home {
+      padding-top: 6rem;
     }
-    @media screen and (min-width: 768px) {
+    .home .wrapper {
+      align-items: start;
+      gap: 1.5rem;
+      text-align: start;
+    }
+    .home .side-sticky {
+      top: 20%;
+      max-width: 3rem;
+    }
+    @media screen and (min-width: 992px) {
       .home {
-        padding-top: 6rem;
+        padding-top: 9rem;
       }
-      .home .wrapper {
-        align-items: start;
-        gap: 1.5rem;
-        text-align: start;
+      .home .text-container {
+        max-width: 45.6rem;
+      }
+      .home .wrapper .btn-group {
+        gap: 3.75rem;
       }
       .home .side-sticky {
-        top: 20%;
-        max-width: 3rem;
+        top: 25%;
       }
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 1200px) {
         .home {
-          padding-top: 9rem;
-        }
-        .home .text-container {
-          max-width: 45.6rem;
-        }
-        .home .wrapper .btn-group {
-          gap: 3.75rem;
+          padding-top: 12rem;
         }
         .home .side-sticky {
-          top: 25%;
+          top: 30%;
+          max-width: 3.5rem;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1400px) {
           .home {
-            padding-top: 12rem;
-          }
-          .home .side-sticky {
-            top: 30%;
-            max-width: 3.5rem;
-          }
-          @media screen and (min-width: 1400px) {
-            .home {
-              padding-top: 15rem;
-            }
+            padding-top: 15rem;
           }
         }
       }
@@ -674,38 +666,36 @@ footer {
   transform: rotate(-40deg);
 }
 /* ! ABOUT US SECTION RESPONSIVE CSS */
-@media screen and (min-width: 576px) {
-  @media screen and (min-width: 768px) {
-    .about-us .wrapper {
-      flex-direction: row;
-      gap: 0;
-    }
+@media screen and (min-width: 768px) {
+  .about-us .wrapper {
+    flex-direction: row;
+    gap: 0;
+  }
 
+  .about-us .wrapper .content-container {
+    width: 23rem;
+    height: 20rem;
+  }
+  .about-us .wrapper:first-child .text-content {
+    bottom: 10%;
+  }
+  @media screen and (min-width: 992px) {
     .about-us .wrapper .content-container {
-      width: 23rem;
-      height: 20rem;
+      width: 30rem;
+      height: 26rem;
     }
-    .about-us .wrapper:first-child .text-content {
-      bottom: 10%;
-    }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1200px) {
       .about-us .wrapper .content-container {
-        width: 30rem;
-        height: 26rem;
+        width: 37rem;
+        height: 34rem;
       }
-      @media screen and (min-width: 1200px) {
+      .about-us .wrapper:first-child .text-content {
+        bottom: 25%;
+      }
+      @media screen and (min-width: 1400px) {
         .about-us .wrapper .content-container {
-          width: 37rem;
-          height: 34rem;
-        }
-        .about-us .wrapper:first-child .text-content {
-          bottom: 25%;
-        }
-        @media screen and (min-width: 1400px) {
-          .about-us .wrapper .content-container {
-            width: 43rem;
-            height: 40rem;
-          }
+          width: 43rem;
+          height: 40rem;
         }
       }
     }
@@ -832,4 +822,13 @@ footer {
       }
     }
   }
+}
+
+/* ! TOP-BAR CSS */
+.top-bar {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 0%);
+  text-transform: capitalize;
+  background: hsla(38, 54%, 61%, 1);
 }
