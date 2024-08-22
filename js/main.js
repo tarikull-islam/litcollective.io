@@ -15,14 +15,11 @@ function flyMenuToggle() {
     });
     // ! ------------------------
     function langHandle() {
-      if (localStorage.getItem("lag")) {
-        console.log("None");
-        $(".select-btn .selected-text")[0].innerText =
-          localStorage.getItem("lag");
-        $(".select-btn .selected-flag").attr(
-          "src",
-          localStorage.getItem("flag")
-        );
+      const languageState = localStorage.getItem("lag");
+      const flagState = localStorage.getItem("flag");
+      if (languageState) {
+        $(".select-btn .selected-text")[0].innerText = languageState;
+        $(".select-btn .selected-flag").attr("src", flagState);
       }
     }
     // ! ------------------
@@ -30,7 +27,7 @@ function flyMenuToggle() {
     function linkHandle() {
       document.body.classList.remove("fly-menu");
     }
-    $(".nav-link").click(function (e) {
+    $(".nav-link").click(function () {
       linkHandle();
     });
     // ! --------------
